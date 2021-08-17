@@ -88,6 +88,7 @@
       dismissLink.href = '#';
       dismissLink.style.marginLeft = '24px';
       dismissLink.style.color = '#613854';
+      dismissLink.style.textDecoration = 'none';
       return dismissLink;
     }
 
