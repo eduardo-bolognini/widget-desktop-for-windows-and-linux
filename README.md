@@ -3,6 +3,7 @@ create notes, make calculations, see the weather and time.
 
 # how to use it
 
+dowload https://codeload.github.com/eduardo-bolognini/widget-desktop-for-windows-and-linux/zip/refs/heads/main
 open widget-desktop.html in the new desktop click F11 for switch to fullscreen
 
 # change weather forecast
