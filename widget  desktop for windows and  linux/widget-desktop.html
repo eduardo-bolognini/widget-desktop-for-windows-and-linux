@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>widget</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="style.css"/>
+  <script type="text/javascript">
+  function startTime()
+  {
+  var today=new Date();
+  var h=today.getHours();
+  var m=today.getMinutes();
+  var s=today.getSeconds();
+  // add a zero in front of numbers<10
+  m=checkTime(m);
+  s=checkTime(s);
+  document.getElementById('ora').innerHTML=h+":"+m+":"+s;
+  t=setTimeout('startTime()',500);
+  }
+  function checkTime(i)
+  {
+  if (i<10)
+  {
+  i="0" + i;
+  }
+  return i;
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+</head>
+<body onload="startTime()" onclick="hide()">
+
+ <hr>
+
+  <div class="content">
+     <input type="text" name="display" id="operazioni" readonly="readonly" class="display" >
+  </div>
+  <div class="content">
+    <div class="content">
+        <input type="submit" id="7" value="7" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="8" value="8" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="9" value="9" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="/" value="/" onclick="n(this.id)" class="tasto">
+    </div>
+    <div class="content">
+        <input type="submit" id="4" value="4" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="5" value="5" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="6" value="6" onclick="n(this.id)" class="tasto">
+        <input type="submit" id="*" value="*" onclick="n(this.id)" class="tasto">
+    </div>
+    <div class="content">
+         <input type="submit" id="1" value="1" onclick="n(this.id)" class="tasto">
+         <input type="submit" id="2" value="2" onclick="n(this.id)" class="tasto">
+         <input type="submit" id="3" value="3" onclick="n(this.id)" class="tasto">
+         <input type="submit" id="-" value="-" onclick="n(this.id)" class="tasto">
+     </div>
+     <div class="content">
+        <input type="submit" id="." value="." onclick="n(this.id)" class="tasto">
+        <input type="submit" id="0" value="0" onclick="n(this.id)" class="tasto">
+        <input type="submit" value="C" onclick="cancella()" class="tasto">
+        <input type="submit" id="+" value="+" onclick="n(this.id)" class="tasto">
+
+      </div>
+      <div class="content">
+           <button value="=" onclick="operazione()" class="uguale tasto">=</button>
+       </div>
+   </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ora-data">
+<p id="ora"></p>
+<p class="data">
+<script> document.write(new Date().toLocaleDateString()); </script>
+</p>
+</div>
+
+<hr>
+
+<a class="weatherwidget-io" href="https://forecast7.com/en/40d71n74d01/new-york/" data-label_1="NEW YORK" data-label_2="WEATHER" data-theme="original" >NEW YORK WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+
+<div class="create a note!">
+<div class="button-position">
+
+<div class="popup button" onclick="button1()"> create a note!
+  <span class="popuptext" id="myPopup1">
+    <textarea onclick="button1()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button2()"> create a note!
+  <span class="popuptext" id="myPopup2">
+    <textarea onclick="button2()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button3()"> create a note!
+  <span class="popuptext" id="myPopup3">
+    <textarea onclick="button3()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button4()"> create a note!
+  <span class="popuptext" id="myPopup4">
+    <textarea onclick="button4()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button5()"> create a note!
+  <span class="popuptext" id="myPopup5">
+    <textarea onclick="button5()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button6()"> create a note!
+  <span class="popuptext" id="myPopup6">
+    <textarea onclick="button6()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+<div class="popup button" onclick="button7()"> create a note!
+  <span class="popuptext" id="myPopup7">
+    <textarea onclick="button7()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+<div class="popup button" onclick="button8()"> create a note!
+  <span class="popuptext" id="myPopup8">
+    <textarea onclick="button8()" type="text" class="popup-input"></textarea>
+  </span>
+</div>
+
+
+
+
+</div>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="js/f11.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/note.js"></script>
+
+  <script>//<![CDATA[
+    document.addEventListener('DOMContentLoaded', function(event) {
+    cookieChoices.showCookieConsentBar('CLICK F11 FOR ENLARGE THE PAGE',
+        '',);
+    });
+//]]>
+</script>
+
+</body>
+</html>
