@@ -7,7 +7,8 @@ dowload https://codeload.github.com/eduardo-bolognini/widget-desktop-for-windows
 
 open widget-desktop.html in the new desktop click F11 for switch to fullscreen
 
-# change weather forecast
+# change weather forecast!
+
 
 1. open https://weatherwidget.io/ 
 2. set location
@@ -18,3 +19,4 @@ open widget-desktop.html in the new desktop click F11 for switch to fullscreen
 7. delete from the eighty-ninth line to the ninety-second line
 8. paste new code  in the liine 89
 
+![Acquisisci schermata Web_17-8-2021_185233_](https://user-images.githubusercontent.com/76057233/129768174-1ebe9556-20e3-4e7e-ac0b-5497adbb7824.jpeg)
