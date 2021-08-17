@@ -1,4 +1,4 @@
-# widget-desktop-for-windows-and-linux
+# widget desktop for windows and linux
 create notes, make calculations, see the weather and time.
 
 # how to use it
